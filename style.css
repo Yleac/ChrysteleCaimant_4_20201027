@@ -93,6 +93,7 @@ a:hover {
 .texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
+    filter: opacity(0.7); /*modification opacity pour meilleure lisibilité*/
 }
 
 .b-parallax {
@@ -741,6 +742,7 @@ h4 {
 
 .white {
     color: #FFFFFF;
+    filter: contrast(1.5); /*modification contraste pour meilleure lisibilité*/
 }
 
 .portfolio-thumb {
@@ -785,7 +787,9 @@ h4 {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF;
+    color: #FFFFFF; 
+    filter:contrast(1.2);
+    
 }
 
 .btn-atomic-tangerine:hover {
