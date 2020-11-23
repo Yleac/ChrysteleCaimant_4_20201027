@@ -48,7 +48,6 @@
                 <button
                   id="nav-toggle"
                   type="button"
-                  role="navigation"
                   aria-label="Menu"
                   class="ui-navbar-toggle navbar-toggle"
                   data-toggle="collapse"
@@ -108,28 +107,27 @@
                 <form
                   id="form_1"
                   novalidate
-                  success-msg="Votre message à bien été envoyé. La Chouette Agence reprendra contact avec vous sous 48h."
-                  fail-msg="Désolé pour le désagrement mais il semble que le serveur de messagerie ne réponde pas. Merci de réessayer plus tard."
                 >
                   <div class="form-group">
                     <label for="name"> Nom </label>
                     <input
+                      type="text"
                       id="name"
                       name="name"
                       placeholder="Anthony Dubois"
-                      type="text"
                       class="form-control"
+                      autofocus
                       required
                     />
                   </div>
                   <div class="form-group">
                     <label for="email"> Adresse email </label>
                     <input
+                      type="email"
                       id="email"
                       name="email"
                       class="form-control"
                       placeholder="anthonydubois@mail.com"
-                      type="email"
                       required
                     />
                   </div>
@@ -138,12 +136,12 @@
                       Comment nous avez-vous connu ?
                     </label>
                     <input
-                      class="form-control"
+                      type="text"
+                      id="input_504"
                       name="originecontact"
                       placeholder="exemple : mailing, recherche internet,etc."
-                      type="text"
+                      class="form-control"
                       required
-                      id="input_504"
                     />
                   </div>
                   <div class="form-group">
@@ -201,10 +199,9 @@
                     <div class="text-center">
                       <a
                         target="_blank"
-                        rel="nofollow"
+                        rel="nofollow noopener noreferrer"
                         href="https://twitter.com"
                         aria-label="Cliquez pour aller vers twitter"
-                        rel="noopener noreferrer"
                         ><span class="fa fa-twitter icon-md"></span
                       ></a>
                     </div>
@@ -213,10 +210,9 @@
                     <div class="text-center">
                       <a
                         target="_blank"
-                        rel="nofollow"
+                        rel="nofollow noopener noreferrer"
                         href="https://facebook.com"
                         aria-label="Cliquez pour aller vers facebook"
-                        rel="noopener noreferrer"
                         ><span class="fa fa-facebook icon-md"></span
                       ></a>
                     </div>
@@ -225,10 +221,9 @@
                     <div class="text-center">
                       <a
                         target="_blank"
-                        rel="nofollow"
+                        rel="nofollow noopener noreferrer"
                         href="https://dribbble.com/"
                         aria-label="Cliquez pour aller vers dribbble"
-                        rel="noopener noreferrer"
                         ><span class="fa fa-dribbble icon-md"></span
                       ></a>
                     </div>
@@ -237,10 +232,9 @@
                     <div class="text-center">
                       <a
                         target="_blank"
-                        rel="nofollow"
+                        rel="nofollow noopener noreferrer"
                         href="https://www.instagram.com/"
                         aria-label="Cliquez pour aller vers instagram"
-                        rel="noopener noreferrer"
                         ><span class="fa fa-instagram icon-md"></span
                       ></a>
                     </div>
