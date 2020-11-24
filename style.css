@@ -132,8 +132,7 @@ a:hover {
 .d-bloc h3 a,
 .d-bloc h4 a,
 .d-bloc h5 a,
-.d-bloc h6 a,
-.d-bloc p a {
+.d-bloc h6 a {
   color: #575757;
   filter: contrast(1.4);
   font-size: 2rem;
@@ -744,7 +743,7 @@ h4 {
 
 .white {
   color: #ffffff;
-  filter: contrast(1.5); /*modification contraste pour meilleure lisibilité*/
+  filter: contrast(1.9); /*modification contraste pour meilleure lisibilité*/
 }
 
 .portfolio-thumb {
@@ -761,7 +760,7 @@ h4 {
 }
 
 .black-background {
-  background-color: #c7b78d;
+  background-color:  #333333; /*modification couleur pour meilleur contraste*/
   padding: 40px 40px 40px 40px;
 }
 
@@ -774,16 +773,12 @@ h4 {
   background-color: #ffffff;
 }
 
-.bgc-dark-slate-blue {
-  background-color: #364577;
-}
-
 .bgc-atomic-tangerine {
   background-color: #f3976c;
 }
 
 .tc-white {
-  color: #f3976c;
+  color: #fff; /*modification couleur pour meilleur contraste*/
   filter: contrast(1.5); /*renforcement contraste*/
 }
 
@@ -799,11 +794,11 @@ h4 {
 }
 
 .ltc-white {
-  color: #ffffff;
+  color:#c27956;/*modif*/
 }
 
 .ltc-white:hover {
-  color: #cccccc;
+  color: #fff;
 }
 
 .ltc-atomic-tangerine {
