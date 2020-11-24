@@ -1,5 +1,6 @@
 #gestion de la compression
 
+<IfModule mod_rewrite.c>
 RewriteEngine on
 #Check to see if browser can accept gzip files. If so and we have it - serve it!
 ReWriteCond %{HTTP:accept-encoding} gzip
@@ -10,6 +11,8 @@ ReWriteCond %{REQUEST_FILENAME} !^.+\.gz$
 RewriteCond %{REQUEST_FILENAME}.gz -f
 #All conditions met so add .gz to URL filename (invisibly)
 RewriteRule ^(.+) $1.gz [QSA,L]
+</IfModule>
+
 <IfModule mod_gzip.c>
 mod_gzip_on Yes
 mod_gzip_dechunk Yes
@@ -46,6 +49,7 @@ mod_gzip_item_exclude mime ^image/.*
 </IfModule>
 
 #Gestion Cache
+
 <IfModule mod_expires.c>
  ExpiresActive On
  ExpiresDefault "access plus 7200 seconds"
